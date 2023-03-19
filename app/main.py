@@ -51,7 +51,7 @@ def scrape():
     df = df.drop_duplicates(['title', 'channel_name', 'description', 'date'], inplace=False)
 
     df = df.astype(str).apply(lambda x: x.str.encode('ascii', 'ignore').str.decode('ascii'))
-
+    driver.quit()
     return df.to_json()
 
 
