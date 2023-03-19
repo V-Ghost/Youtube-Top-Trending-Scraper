@@ -7,7 +7,7 @@ from datetime import date
 from sqlalchemy import create_engine
 import re
 from flask import Flask
-from flask import request
+
 
 from selenium.webdriver.chrome.options import Options
 
